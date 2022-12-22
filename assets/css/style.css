@@ -135,7 +135,7 @@ main {
     padding: 38px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 15px 50px -15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
     margin-top: 70px;
 }
 

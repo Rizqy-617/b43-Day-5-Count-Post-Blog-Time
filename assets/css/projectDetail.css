@@ -116,8 +116,26 @@ nav .right_section a:hover {
 /* Navbar End */
 
 /* Main */
+
+body {
+    background-color: #E2E6EA;
+}
+
 .project-detail {
     align-items: center;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
 }
 
 .project-detail .container {
@@ -243,9 +261,9 @@ nav .right_section a:hover {
 }
 
 .paragraf .list-paragraf {
-    width: 60%;
+    width: 80%;
     margin-top: 20px;
-    margin-left: 230px;
+    margin-left: 131px;
 }
 
 .paragraf .list-paragraf .paragraf-text {
