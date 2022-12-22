@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Loading Start */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid orangered;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animate-bottom {
+    from { bottom: -100px; opacity: 0;}
+    to { bottom: 0px; opacity: 1;}
+}
+
+@keyframes animate-bottom {
+    from { bottom: -100px; opacity: 0;}
+    to { bottom: 0px; opacity: 1;}
+}
+
+#myDiv {
+    display: none;
+}
+
+
+/* Loading End */
+
+/* Navbar Start*/
+
+nav {
+    background-color: #F4F3F3;
+    display: flex;
+    height: 70px;
+}
+
+nav .left_section {
+    flex: 55%;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+nav .left_section li {
+    display: inline-block;
+}
+
+nav .left_section ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav .left_section ul li a:hover {
+    text-decoration: none;
+    color: orangered;
+    transition-duration: 300ms;
+}
+
+nav .left_section ul li a:active {
+    color: orangered;
+}
+
+nav .right_section {
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 90px;
+}
+
+nav .right_section a {
+    background-color: black;
+    color: #F4F3F3;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav .right_section a:hover {
+    background-color: orangered;
+    transition-duration: 500ms;
+}
+
+/* Navbar End */
+
+/* Main */
+.project-detail {
+    align-items: center;
+}
+
+.project-detail .container {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.box .left-img {
+    display: flex;
+    flex: 50%;
+    justify-content: flex-end;
+}
+
+.box .left-img img {
+    width: 400px;
+    height: 300px;
+}
+
+.box .right-box {
+    display: flex;
+    flex: 50%;
+    justify-content: flex-start;
+}
+
+.right-content {
+    width: 350px;
+}
+
+.right-content h2 {
+    text-align: left;
+    margin-left: 37px;
+}
+
+.calender {
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.calender p {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    float: right;
+}
+
+.calender img {
+    margin-right: 13.512px;
+    margin-left: 13.512px;
+    margin-top: 1.200px;
+    margin-top: 1.200px;
+    width: 32px;
+    float: left;
+}
+
+.clock {
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.clock p {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    float: right;
+}
+
+.clock img {
+    margin-right: 13.512px;
+    margin-left: 13.512px;
+    margin-top: 1.200px;
+    margin-top: 1.200px;
+    width: 32px;
+    float: left;
+}
+
+.icon {
+    margin-top: 30px;
+}
+
+.icon-bagian-kanan {
+    width: 250px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.icon-bagian-kiri {
+    width: 250px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.icon-bagian-kanan p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.icon-bagian-kiri p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.icon-bagian-kanan img {
+    width: 32px;
+}
+
+.icon-bagian-kiri img {
+    width: 32px;
+}
+
+.paragraf {
+    width: 100%;
+}
+
+.paragraf .list-paragraf {
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 230px;
+}
+
+.paragraf .list-paragraf .paragraf-text {
+    text-align: justify;
+    padding-top: 20px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project</title>
+    <link rel="icon" href="/assets/img/brandred.png">
+    <link rel="stylesheet" href="/assets/css/addProject.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body onload="myFunction()" style="margin: 0;">
+    <!-- Loading animation -->
+    <div id="loader"></div>
+    <div id="myDiv" style="display: none;" class="animate-bottom">
+    <!-- Navbar -->
+    <nav>
+        <section class="left_section">
+            <a href="index.html"><img src="/assets/img/brandred.png" alt="icon dumbways" width="70px" style="padding-right: 40px;"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </section>
+        <section class="right_section">
+            <a href="contact.html">Contact Me</a>
+        </section>
+    </nav>
+    <!-- Main -->
+    <main>
+        <div class="project-form">
+            <h1>ADD MY PROJECT</h1>
+            <form onsubmit="addData(event)">
+                <!-- Project Name -->
+                <div class="projectname">
+                    <label for="project_name">Project Name</label>
+                    <input type="text" id="project_name">
+                </div>
+                <!-- Start Date & End Date -->
+                <div class="date">
+                    <div class="half">
+                        <label for="start_date">Start Date</label>
+                        <input type="date" id="start_date">
+                    </div>
+                    <div class="half">
+                        <label for="end_date">End Date</label>
+                        <input type="date" id="end_date">
+                    </div>
+                </div>
+                <!-- Deskripsi -->
+                <div class="deskripsi">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
+                <!-- Technologies -->
+                <h4>Technologies</h4>
+                <div class="checkbox">
+                    <!-- Bagian Kiri -->
+                    <div class="checkbox-kiri">
+                        <div class="checkbox-grup">
+                            <input type="checkbox" name="nodejs" id="nodejs" value="nodejs">
+                            <label for="nodejs">Node JS</label>
+                        </div>
+                        <div class="checkbox-grup">
+                            <input type="checkbox" name="reactjs" id="reactjs" value="reactjs">
+                            <label for="reactjs">React JS</label>
+                        </div>
+                    </div>
+                    <!-- Bagian Kanan -->
+                    <div class="checkbox-kanan">
+                        <div class="checkbox-grup">
+                            <input type="checkbox" name="nextjs" id="nextjs" value="nextjs">
+                            <label for="nextjs">Next Js</label>
+                        </div>
+                        <div class="checkbox-grup">
+                            <input type="checkbox" name="typescript" id="typescript" value="typescript">
+                            <label for="typescript">Typescript</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upload Image -->
+                <div class="upload">
+                    <label for="upload">Upload Image</label>
+                    <input type="file" id="upload_image" name="upload-image" name="upload-image" accept="image/*">
+                </div>
+                <!-- Button Submit -->
+                <div class="button">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- List Project -->
+        <div class="list-project-head">
+            <h1>My Project</h1>
+            <div class="list-project" id="projects">
+                <!-- Dynamic Content Here -->
+            </div>
+        </div>
+    </main>
+    </div>
+    <!-- Script -->
+    <script src="/assets/js/project.js"></script>
+    <script src="/assets/js/loader.js"></script>
+</body>
+</html>

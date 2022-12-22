@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="icon" href="/assets/img/brandred.png">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6c0725605.js" crossorigin="anonymous"></script>
+</head>
+<body onload="myFunction()" style="margin: 0;">
+    <div id="loader"></div>
+    <!-- Navbar -->
+    <div id="myDiv" style="display: none;" class="animate-bottom">
+    <nav>
+        <section class="left_section">
+            <a href="index.html"><img src="/assets/img/brandred.png" alt="icon dumbways" width="70px" style="padding-right: 40px;"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </section>
+        <section class="right_section">
+            <a href="contact.html">Contact Me</a>
+        </section>
+    </nav>
+    <!-- Main -->
+    <main>
+        <div class="contact">
+            <div class="contact-container">
+                <h1>GET IN TOUCH</h1>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone">
+                    <label for="subject">Subject</label>
+                    <select name="Subject" id="subject">
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">Fullstack</option>
+                    </select>
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" placeholder="Write your message here"></textarea>
+                    <div class="btn-submit">
+                        <button type="button" onclick="submitData()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    </div>
+    <script src="/assets/js/contact.js"></script>
+    <script src="/assets/js/loader.js"></script>
+</body>
+</html>

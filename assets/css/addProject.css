@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Loading Start */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid orangered;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animate-bottom {
+    from { bottom: -100px; opacity: 0;}
+    to { bottom: 0px; opacity: 1;}
+}
+
+@keyframes animate-bottom {
+    from { bottom: -100px; opacity: 0;}
+    to { bottom: 0px; opacity: 1;}
+}
+
+#myDiv {
+    display: none;
+}
+
+
+/* Loading End */
+
+/* Navbar Start*/
+
+nav {
+    background-color: #F4F3F3;
+    display: flex;
+    height: 70px;
+}
+
+nav .left_section {
+    flex: 55%;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+nav .left_section li {
+    display: inline-block;
+}
+
+nav .left_section ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav .left_section ul li a:hover {
+    text-decoration: none;
+    color: orangered;
+    transition-duration: 300ms;
+}
+
+nav .left_section ul li a:active {
+    color: orangered;
+}
+
+nav .right_section {
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 90px;
+}
+
+nav .right_section a {
+    background-color: black;
+    color: #F4F3F3;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav .right_section a:hover {
+    background-color: orangered;
+    transition-duration: 500ms;
+}
+
+/* Navbar End */
+
+/* Main */
+
+body {
+    background-color: #E2E6EA;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    height: 120vh;
+}
+
+.project-form {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.project-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Project Name Start */
+.projectname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.projectname input {
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.projectname label {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* Project Name End */
+
+/* Date Start */
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.date input {
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.date label {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.half {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.half:first-child input {
+    width: 100%;
+}
+
+.half:last-child input {
+    width: 100%;
+}
+
+.half:first-child {
+    flex: 50%;
+    margin-right: 50px;
+}
+
+.half:last-child {
+    flex: 50%;
+}
+
+/* Date End */
+
+/* Deskripsi Start */
+
+.deskripsi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.deskripsi textarea {
+    border: none;
+    padding: 60px 16px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.deskripsi label {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* Deskripsi End */
+
+/* Checkbox Start */
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox label {
+    color: gray;
+}
+
+.checkbox input {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.checkbox-grup {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-kiri {
+    margin-right: 80px;
+}
+
+.checkbox-kiri .checkbox-grup {
+    margin-bottom: 10px;
+}
+
+.checkbox-kanan .checkbox-grup {
+    margin-bottom: 10px;
+}
+
+/* Checkbox End */
+
+/* Upload & Button Submit Start */
+
+.upload input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button .btn-submit {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+.button .btn-submit:hover {
+    background-color: orangered;
+    transition: 500ms;
+}
+
+/* Upload & Button Submit End */
+
+/* List Project */
+
+.list-project-head {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    background-color: white;
+    margin: auto;
+    width: 100%;
+}
+
+.list-project-head h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.list-project {
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-project {
+    text-decoration: none;
+    color: black;
+    flex-basis: 20%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 50px -15px rgba(0, 0, 0, 0.3);
+}
+
+.cover_image {
+    display: flex;
+    justify-content: center;
+}
+
+.cover_image img {
+    margin: 10px;
+    width: 230px;
+    height: 230px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.project_name {
+    font-weight: 700;
+    font-size: 16;
+}
+
+.tech_icon img {
+    margin-top: 10px;
+    width: 30px;
+}
+
+.btn-card {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-card button {
+    padding: 6px 18px;
+    flex: 1;
+    text-decoration: none;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}

@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Loading Start */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid orangered;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animate-bottom {
+    from { bottom: -100px; opacity: 0;}
+    to { bottom: 0px; opacity: 1;}
+}
+
+@keyframes animate-bottom {
+    from { bottom: -100px; opacity: 0;}
+    to { bottom: 0px; opacity: 1;}
+}
+
+#myDiv {
+    display: none;
+}
+
+
+/* Loading End */
+
+/* Navbar Start*/
+
+nav {
+    background-color: #F4F3F3;
+    display: flex;
+    height: 70px;
+}
+
+nav .left_section {
+    flex: 55%;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+nav .left_section li {
+    display: inline-block;
+}
+
+nav .left_section ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav .left_section ul li a:hover {
+    text-decoration: none;
+    color: orangered;
+    transition-duration: 300ms;
+}
+
+nav .left_section ul li a:active {
+    color: orangered;
+}
+
+nav .right_section {
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 90px;
+}
+
+nav .right_section a {
+    background-color: black;
+    color: #F4F3F3;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav .right_section a:hover {
+    background-color: orangered;
+    transition-duration: 500ms;
+}
+
+/* Navbar End */
+
+/* Main */
+
+body {
+    background-color: #E2E6EA;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 1024px;
+}
+
+.card {
+    width: 1024px;
+    margin: 36px auto;
+    padding: 38px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px -15px rgba(0, 0, 0, 0.3);
+    margin-top: 70px;
+}
+
+.card-container {
+    padding: 0 48px;
+    margin: auto;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left Item Start */
+.left-item {
+    flex-basis: 60%;
+}
+
+.left-item h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.left-item p {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-button .card-button-contact {
+    text-decoration: none;
+    padding: 6px 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.card-button-contact:hover {
+    background-color: orangered;
+    transition-duration: 500ms;
+}
+
+.social-image h1 {
+    margin-bottom:20px;
+    font-size: 22px;
+}
+
+.social-image i {
+    color: black;
+    margin-right: 20px;
+}
+/* Left Item End */
+
+/* Right Item Start */
+
+.right-item {
+    flex-basis: 40%;
+}
+
+.card-profile {
+    margin-left: 64px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 10px 50px -15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-profile img {
+    object-fit: fill;
+    width: 320px;
+    height: 300px;
+}
+.card-profile .card-profile-content {
+    padding: 14px;
+}
+
+.card-profile h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card-profile p {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+/* Right Item End */
+
+
+
+
+
