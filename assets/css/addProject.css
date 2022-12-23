@@ -78,7 +78,8 @@ nav .left_section ul li a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 nav .left_section ul li a:hover {
@@ -104,8 +105,9 @@ nav .right_section a {
     color: #F4F3F3;
     padding: 10px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 nav .right_section a:hover {
@@ -250,7 +252,8 @@ h4 {
 }
 
 .checkbox label {
-    color: rgb(38, 34, 34);
+    color: grey;
+    font-weight: 600;
 }
 
 .checkbox input {
@@ -285,9 +288,8 @@ h4 {
     font-weight: bold;
 }
 
-.upload input {
-    width: 100%;
-    padding: 12px 16px;
+.upload-button {
+    width: 482px;
     font-size: 20px;
     font-weight: 400;
     margin-top: 10px;
@@ -296,7 +298,34 @@ h4 {
     border: none;
     box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+}
+
+.upload-button label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
+    width: 100%;
+}
+
+.upload-button label img {
+    margin-right: 10px;
+}
+
+.upload-button p {
+    background-color: #E4E4E4;
+    width: 100px;
+    padding: 8px 12px 8px 12px;
+    text-align: center;
+    border-radius: 5px;
+    color: grey;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.upload-button p:hover {
+    background-color: orangered;
+    color: white;
+    transition: 500ms;
 }
 
 .button {
@@ -380,6 +409,7 @@ h4 {
 .card-text {
     max-width: 100%;
     overflow: hidden;
+    height: 43px;
 }
 
 .project_name {

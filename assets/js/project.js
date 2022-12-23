@@ -67,7 +67,7 @@ for (let index = 0; index < data.length; index++) {
         <div class="card-content">
             <div class="project-name">
                 <h3>${data[index].projectName}</h3>
-                <h4>Durasi: ${countTime(data[index].startDate, data[index].endDate)}</h4>
+                <h4>Durasi: ${countTime(data[index].startDate, data[index].endDate)} Hari</h4>
             </div>
             <div class="card-text">
                 <p>${data[index].description}</p>
@@ -91,8 +91,8 @@ for (let index = 0; index < data.length; index++) {
 
 // Fungsi Menambahkan waktu
 
-function countTime(startDate , emdDate) {
+function countTime(startDate , endDate) {
     let inMilisecond = new Date(endDate) - new Date(startDate)
-    let selisihHari = dalamMilisecond / (1000 * 60 * 60 * 24)
+    let selisihHari = inMilisecond / (1000 * 60 * 60 * 24)
     return selisihHari
 }

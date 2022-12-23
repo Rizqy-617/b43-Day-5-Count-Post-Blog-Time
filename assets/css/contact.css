@@ -77,7 +77,8 @@ nav .left_section ul li a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 nav .left_section ul li a:hover {
@@ -103,7 +104,8 @@ nav .right_section a {
     color: #F4F3F3;
     padding: 10px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
 }
 
