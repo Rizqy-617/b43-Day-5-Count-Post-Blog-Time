@@ -67,16 +67,16 @@ for (let index = 0; index < data.length; index++) {
         <div class="card-content">
             <div class="project-name">
                 <h3>${data[index].projectName}</h3>
-                <h4>Durasi: ${penghitungWaktu(data[index].startDate, data[index].endDate)} Hari</h4>
+                <h4>Durasi: ${countTime(data[index].startDate, data[index].endDate)}</h4>
             </div>
             <div class="card-text">
                 <p>${data[index].description}</p>
             </div>
             <div class="tech_icon">
-                <img src="${data[index].nodeJSImg}" alt="nodejs icon">
-                <img src="${data[index].reactJSImg}" alt="reactjs icon">
-                <img src="${data[index].nextJSImg}" alt="nextjs icon">
-                <img src="${data[index].typeScriptImg}" alt="typescript icon">
+                <img src="${data[index].nodeJSImg}">
+                <img src="${data[index].reactJSImg}">
+                <img src="${data[index].nextJSImg}">
+                <img src="${data[index].typeScriptImg}">
             </div>
             <div class="btn-card">
                 <button>Edit</button>
@@ -89,10 +89,10 @@ for (let index = 0; index < data.length; index++) {
 
 }
 
-// Function menghitung waktu
+// Fungsi Menambahkan waktu
 
-function penghitungWaktu(startDate , endDate) {
-    let dalamMiliSecond = new Date(endDate) - new Date(startDate)
-    let selisihHari = dalamMiliSecond / (1000 * 60 *60 * 24)
+function countTime(startDate , emdDate) {
+    let inMilisecond = new Date(endDate) - new Date(startDate)
+    let selisihHari = dalamMilisecond / (1000 * 60 * 60 * 24)
     return selisihHari
 }

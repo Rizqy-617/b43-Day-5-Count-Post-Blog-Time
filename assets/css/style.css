@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Loading Start */
@@ -135,8 +135,7 @@ main {
     padding: 38px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
-    margin-top: 70px;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);    margin-top: 70px;
 }
 
 .card-container {
@@ -212,8 +211,7 @@ main {
     margin-left: 64px;
     text-align: center;
     background: white;
-    box-shadow: 0 10px 50px -15px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);    border-radius: 8px;
     overflow: hidden;
 }
 

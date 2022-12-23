@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Loading Start */
@@ -155,6 +155,8 @@ main {
     padding: 12px 16px;
     border-radius: 6px;
     width: 100%;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
+
 }
 
 .projectname label {
@@ -176,6 +178,8 @@ main {
     border: none;
     padding: 12px 16px;
     border-radius: 6px;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
+
 }
 
 .date label {
@@ -224,6 +228,8 @@ main {
     padding: 60px 16px;
     border-radius: 6px;
     width: 100%;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
+
 }
 
 .deskripsi label {
@@ -244,13 +250,14 @@ h4 {
 }
 
 .checkbox label {
-    color: gray;
+    color: rgb(38, 34, 34);
 }
 
 .checkbox input {
     height: 25px;
     width: 25px;
     margin-right: 5px;
+    
 }
 
 .checkbox-grup {
@@ -274,6 +281,10 @@ h4 {
 
 /* Upload & Button Submit Start */
 
+.upload label {
+    font-weight: bold;
+}
+
 .upload input {
     width: 100%;
     padding: 12px 16px;
@@ -283,16 +294,13 @@ h4 {
     margin-bottom: 10px;
     background: white;
     border: none;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     cursor: pointer;
 }
 
-.upload label {
-    font-weight: bold;
-}
-
 .button {
-    width: 100%;
+    width: 106.5%;
     margin-top: 14px;
     display: flex;
     align-items: center;
@@ -302,7 +310,7 @@ h4 {
 .button .btn-submit {
     padding: 10px 22px;
     border: none;
-    border-radius: 25px;
+    border-radius: 17px;
     background-color: black;
     color: white;
     font-size: 14px;
@@ -321,9 +329,10 @@ h4 {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
-    background-color: white;
+    background-color: #F4F3F3;
     margin: auto;
     width: 100%;
+    padding: 20px 0 20px 0;
 }
 
 .list-project-head h1 {
@@ -348,7 +357,7 @@ h4 {
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 50px -15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
 }
 
 .cover_image {
@@ -366,6 +375,11 @@ h4 {
 
 .card-content {
     padding: 20px;
+}
+
+.card-text {
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .project_name {

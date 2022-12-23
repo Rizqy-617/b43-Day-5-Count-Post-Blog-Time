@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Loading Start */
@@ -116,7 +116,6 @@ nav .right_section a:hover {
 /* Navbar End */
 
 /* Main */
-
 body {
     background-color: #E2E6EA;
 }
