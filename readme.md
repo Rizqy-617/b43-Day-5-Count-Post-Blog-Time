@@ -5,5 +5,5 @@
     - Change all navbar text font size to 18px and font weight 600
     - Fixing some bug in project.js
     - Add 43px height to class card-text 
-
+    - Set loader animation duration to 1000ms
 ## Screenshot
