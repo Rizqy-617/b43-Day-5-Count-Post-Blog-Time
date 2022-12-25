@@ -30,23 +30,6 @@
     100% { transform: rotate(360deg); }
 }
 
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
-}
-
-@-webkit-keyframes animate-bottom {
-    from { bottom: -100px; opacity: 0;}
-    to { bottom: 0px; opacity: 1;}
-}
-
-@keyframes animate-bottom {
-    from { bottom: -100px; opacity: 0;}
-    to { bottom: 0px; opacity: 1;}
-}
 
 #myDiv {
     display: none;
