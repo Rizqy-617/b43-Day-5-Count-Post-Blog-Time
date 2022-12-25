@@ -439,4 +439,9 @@ h4 {
     color: white;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-card button:hover {
+    background: orangered;
 }

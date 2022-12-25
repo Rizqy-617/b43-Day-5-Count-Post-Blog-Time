@@ -60,14 +60,14 @@ function renderBlog() {
 // Loop
 for (let index = 0; index < data.length; index++) {
     document.getElementById('projects').innerHTML += `
-    <a href="/project-detail.html" class="card-project">
+    <div class="card-project" id="card-${index}">
         <div class="cover_image">
             <img src="${data[index].imageURL}" alt="">
         </div>
         <div class="card-content">
             <div class="project-name">
-                <h3>${data[index].projectName}</h3>
-                <h4>Durasi: ${countTime(data[index].startDate, data[index].endDate)} Hari</h4>
+                <a href="project-detail.html"><h3>${data[index].projectName}</h3></a>
+                <h4>Duration: ${countTime(data[index].startDate, data[index].endDate)}</h4>
             </div>
             <div class="card-text">
                 <p>${data[index].description}</p>
@@ -80,11 +80,12 @@ for (let index = 0; index < data.length; index++) {
             </div>
             <div class="btn-card">
                 <button>Edit</button>
-                <button>Delete</button>
+                <button type="button" onclick="document.getElementById('card-${index}').remove()">Delete</button>
             </div>
         </div>
-    </a>
+    </div>
     `
+
 }
 
 }
@@ -92,7 +93,26 @@ for (let index = 0; index < data.length; index++) {
 // Fungsi Menambahkan waktu
 
 function countTime(startDate , endDate) {
-    let inMilisecond = new Date(endDate) - new Date(startDate)
-    let selisihHari = inMilisecond / (1000 * 60 * 60 * 24)
-    return selisihHari
+    let timeStart = new Date(startDate)
+    let timeEnd = new Date(endDate)
+
+    let distance = timeEnd - timeStart
+
+    let monthDistance = Math.floor(distance / (30 * 24 * 60 * 60 * 1000))
+    if (monthDistance != 0) {
+        return monthDistance + ' Month'
+    } else {
+        let weekDistance = Math.floor(distance / (7 * 24 * 60 * 60 * 1000))
+        if (weekDistance != 0) {
+            return weekDistance + ' Week'
+        } else {
+            let daysDistance = Math.floor(distance / (24 * 60 * 60 * 1000))
+            if (daysDistance != 0) {
+                return daysDistance + ' Days'
+            } else {
+                return ' 1 Days'
+            }
+        }
+    }
+
 }
