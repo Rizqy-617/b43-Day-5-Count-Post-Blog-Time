@@ -9,5 +9,5 @@
 ## Changelog 2 
     - Change countTime function so it can return month, week, and day
     - Change Durasi to Duration
-    - Now delete button is work
     - Edit and delete button now have cursor and hover effect
+    - Roll Back Delete button is absolutely broken

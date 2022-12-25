@@ -80,7 +80,7 @@ for (let index = 0; index < data.length; index++) {
             </div>
             <div class="btn-card">
                 <button>Edit</button>
-                <button type="button" onclick="document.getElementById('card-${index}').remove()">Delete</button>
+                <button>Delete</button>
             </div>
         </div>
     </div>
