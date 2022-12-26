@@ -12,3 +12,5 @@
     - Edit and delete button now have cursor and hover effect
     - Roll Back Delete button is absolutely broken
     - Remove animate bottom
+## Changelog 3
+    -Fix the padding in textarea
